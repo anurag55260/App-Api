@@ -4,7 +4,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 public class RegisterRequestModel {
-	private String orgination;
+	private String name;
 	private String email;
 	private String phone;
 	private String street;
@@ -14,12 +14,14 @@ public class RegisterRequestModel {
 	private String country;
 	private String pin;
 
-	public String getOrgination() {
-		return orgination;
+
+
+	public String getName() {
+		return name;
 	}
 
-	public void setOrgination(String orgination) {
-		this.orgination = orgination;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getEmail() {

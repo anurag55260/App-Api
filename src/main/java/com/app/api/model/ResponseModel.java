@@ -16,6 +16,8 @@ public class ResponseModel<T> {
 	private Integer noOfPage[];
 	private String action;
 	private String token;
+	private ProfileModel profile;
+	private Services[] services;
 	
 	public ResponseModel(HttpStatus status, String message) {
 		super();
@@ -52,6 +54,14 @@ public class ResponseModel<T> {
 		this.status = status;
 		this.message = message;
 		this.token = token;
+	}
+	
+	public ResponseModel(HttpStatus status, String message, String token, ProfileModel profile) {
+		super();
+		this.status = status;
+		this.message = message;
+		this.token = token;
+		this.profile=profile;
 	}
 
 
@@ -153,6 +163,31 @@ public class ResponseModel<T> {
 	public void setToken(String token) {
 		this.token = token;
 	}
+
+
+
+	public ProfileModel getProfile() {
+		return profile;
+	}
+
+
+
+	public void setProfile(ProfileModel profile) {
+		this.profile = profile;
+	}
+
+
+
+	public Services[] getServices() {
+		return services;
+	}
+
+
+
+	public void setServices(Services[] services) {
+		this.services = services;
+	}
+	
 	
 	
 }

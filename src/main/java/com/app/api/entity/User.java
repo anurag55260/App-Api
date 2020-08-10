@@ -37,6 +37,18 @@ public class User implements Serializable {
 			inverseJoinColumns=@JoinColumn(name ="role_id")
 			)
 	private Set<Role> roles = new HashSet<>();
+	
+	public User() {
+		// TODO Auto-generated constructor stub
+	}
+	public User(String username, String password, boolean enabled, Role roles) {
+		super();
+		this.username = username;
+		this.password = password;
+		this.enabled = enabled;
+		this.roles.add(roles);
+	}
+	
 
 	public Integer getId() {
 		return id;

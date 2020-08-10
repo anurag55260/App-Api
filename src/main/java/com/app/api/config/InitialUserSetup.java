@@ -39,12 +39,12 @@ public class InitialUserSetup {
 		if (adminRole == null)
 			return;
 
-		User user = new User();
+		/*User user = new User();
 		user.setUsername("admin");
-		user.setPassword("admin");
+		user.setPassword("admin");*/
 		// user.setRoles(Arrays.asList(adminRole));
 
-		userRepository.save(user);
+		//userRepository.save(user);
 
 	}
 

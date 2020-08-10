@@ -23,6 +23,15 @@ public class Role implements Serializable {
 	private Integer roleId;
 	private String name;
 
+	public Role() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Role(String name) {
+		super();
+		this.name = name;
+	}
+
 	// private User users;
 	public int getRoleId() {
 		return roleId;
